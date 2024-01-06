@@ -323,56 +323,6 @@ section{
     background:var(--springGreen);
 }
 
-.portfolio .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap:2rem;
-}
-
-.portfolio .box-container .box{
-    height: 25rem;
-    border-radius: .5rem;
-    overflow:hidden;
-    box-shadow: var(--box-shadow);
-    position: relative;
-    border:1rem solid transparent;
-}
-
-.portfolio .box-container .box img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.portfolio .box-container .box .content{
-    position: absolute;
-    top:0; left: 0;
-    height: 100%;
-    width: 100%;
-    background: var(--bg-color);
-    display: grid;
-    place-items: center;
-    transform: scale(0);
-}
-
-.portfolio .box-container .box:hover .content{
-    transform: scale(1);
-}
-
-.portfolio .box-container .box .content h3{
-    font-size: 2.5rem;
-    color:var(--black);
-    text-transform: uppercase;
-    transform: translateY(-5rem);
-    opacity: 0;
-    transition-delay: .3s;
-}
-
-.portfolio .box-container .box:hover .content h3{
-    transform: translateY(0rem);
-    opacity: 1;
-}
-
 .contact form{
     margin:1rem auto;
     max-width: 70rem;
@@ -443,43 +393,4 @@ section{
     background-color: var(--green);
     color: white;
     padding: 5px;
-}
-
-
-@media (max-width:991px){
-
-    html{
-        font-size: 55%;
-    }
-
-    body{
-        padding-left: 0;
-    }
-
-    .header{
-        left:-110%;
-    }
-
-    .header.active{
-        left:0%;
-        transition: .4s linear;
-    }
-
-    #menu-btn{
-        display: initial;
-    }
-
-}
-
-@media (max-width:450px){
-
-    html{
-        font-size: 50%;
-    }
-
-    .header{
-        width:100%;
-        border-right: 0;
-    }
-
 }
